@@ -1,0 +1,29 @@
+.home_content {
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+.home_content h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.home_content h2 {
+  font-size: 50px;
+  margin-bottom: 8px;
+  
+  background: linear-gradient(to right, #cce4bb,  #5ca921, #00c6ff 80%);
+  background-size: 50% auto;
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home_content p {   
+  font-size: 16px;
+  line-height: 1.5;
+}
+.home_subtitle {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-weight: 100;
+}
