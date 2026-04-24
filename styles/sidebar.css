@@ -1,0 +1,88 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 100;
+}
+
+#sidebar.active {
+  width: 250px;
+}
+#sidebar.active .card {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+#sidebar.active .label {
+  opacity: 1;
+  width: auto;
+  margin-left: 10px;
+}
+
+#bar {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 18px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+#bar:hover {
+  border: 1px solid white;
+  transform: translateX(-1px);
+}
+
+/* SIDEBAR ITEMS */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  color: whitesmoke;
+  font-weight: 300;
+
+  padding: 10px 0;
+  margin: 15px 0;
+
+  border-radius: 10px;
+}
+
+.card:hover {
+  background-color: #5ca921;
+  font-weight: bold;
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+.label {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transition: opacity 0.2s;
+}
+
+.icon_img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  filter: brightness(30) invert(0.9);
+  border-radius: 5px;
+}
