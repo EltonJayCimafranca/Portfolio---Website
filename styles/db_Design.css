@@ -15,11 +15,15 @@ body {
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* LAYOUT */
 #layout {
   display: flex;
+  flex: 1;
 }
 
 #homepage {
@@ -36,6 +40,9 @@ body {
   min-height: 100vh;
   padding: 40px 20px;
   color: white;
+}
+.section h1 {
+  padding: 0px 20px;
 }
 
 /* NAVBAR */
@@ -63,12 +70,9 @@ body {
 
 /* FOOTER */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
 
-  padding: 20px;
+  padding: 40px;
   text-align: center;
 
   background-color: rgba(0,0,0,0.5);
